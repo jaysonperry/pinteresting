@@ -3,4 +3,8 @@ class PagesController < ApplicationController
   end
   def about
   end
+  def signup
+  end
+  def signin
+  end
 end
