@@ -1,6 +1,17 @@
-$body-bg:rgba(52, 73, 94,1.0);
-
-$font-family-sans-serif:Verdana, sans-serif;
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic);
+$body-bg: #ecf0f1;
+$font-family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height: 45px;
+$navbar-default-bg: white;
+$navbar-default-brand-color: #c0392b;
+$brand-primary: #c0392b;
+$jumbotron-bg: white;
 
 @import 'bootstrap';
+
+.center { text-align: center; }
+.navbar-brand { font-weight: bold; }
+.bot-margin-lg { margin-bottom: .5em; }
+.btn-primary {background: blue; }
+
+
