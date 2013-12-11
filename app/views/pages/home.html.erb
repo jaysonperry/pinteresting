@@ -1,6 +1,15 @@
 <div class="jumbotron">
   <h1 class="center bot-margin-lg">Entreuse Publicity Hacking App</h1>
-  <p>Click here to <%= link_to "Sign Up", signup_path, class: "btn-primary btn-lg" %> OR click here to <%= link_to "Sign in", signin_path, class: "btn-info btn-lg" %></p>
-  <p>made by Jayson Perry</p>
+  <% if user_signed_in? %>
+    <h2>Welcome to the Members' Area.</h2>
+  <% else %>
+    <p class="center">Click here to
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn-primary btn-lg" %>
+      OR click here to
+      <%= link_to "Sign in", new_user_session_path, class: "btn-info btn-lg" %>
+    </p>
+  <% end %>
+  
+  <p class="center">made by Jayson Perry</p>
   <p class="center"><b><i>Entreuse is a publicity hacking application</b></i> for anyone who has anything to launch!</p>
 </div>

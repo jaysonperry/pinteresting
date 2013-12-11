@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '1.9.3'
+
+#Gems
 
 gem 'rails', '4.0.1'
 
@@ -17,7 +19,11 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
-#Group
+gem  'devise', '~> 3.2.2'
+
+
+
+#Groups
 
 group :development, :test do
   #Hack for Heroku db
